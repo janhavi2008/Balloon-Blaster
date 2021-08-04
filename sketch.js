@@ -60,60 +60,60 @@ function draw() {
 }
 
 //CHOOSE THE CORRECT UPDATEHEIGHT FUNCTION
-// function updateHeight(x,y){
-//   database.ref('balloon/height').set({
-//     'x': height.x ,
-//     'y': height.y 
-//   })
-// }
+ function updateHeight(x,y){
+   database.ref('balloon/height').set({
+    'x': height.x ,
+    'y': height.y 
+   })
+ }
 
-// function updateHeight(x,y){
-//   database.ref('balloon/height')({
-//     'x': height.x + x ,
-//     'y': height.y + y
-//   })
-// }
-
-
-// function updateHeight(x,y){
-//   database.ref('balloon/height').set({
-//     'x': height.x + x ,
-//     'y': height.y + y
-//   })
-// }
+ function updateHeight(x,y){
+  database.ref('balloon/height')({
+     'x': height.x + x ,
+    'y': height.y + y
+  })
+ }
 
 
-// function updateHeight(x,y){
-//   database.ref().set({
-//     'x': height.x + x ,
-//     'y': height.y + y
-//   })
-// }
+ function updateHeight(x,y){
+   database.ref('balloon/height').set({
+    'x': height.x + x ,
+    'y': height.y + y
+   })
+ }
+
+
+ function updateHeight(x,y){
+   database.ref().set({
+     'x': height.x + x ,
+     'y': height.y + y
+   })
+ }
 
 
 
 
 //CHOOSE THE CORRECT READHEIGHT FUNCTION
-// function readHeight(data){
-//   balloon.x = height.x;
-//   balloon.y = height.y;
-// }
+ function readHeight(data){
+   balloon.x = height.x;
+   balloon.y = height.y;
+ }
 
-// function readHeight(data){
-//   height = data.val();
-//   balloon.x = height.x;
-//   balloon.y = height.y;
-// }
+ function readHeight(data){
+   height = data.val();
+  balloon.x = height.x;
+   balloon.y = height.y;
+ }
 
-// function readHeight(data){
-//   height = data.val();
-// }
+function readHeight(data){
+  height = data.val();
+ }
 
-// function readHeight(){
-//   height = val();
-//   balloon.x = height.x;
-//   balloon.y = height.y;
-// }
+function readHeight(){
+ height = val();
+  balloon.x = height.x;
+ balloon.y = height.y;
+ }
 
 function showError(){
   console.log("Error in writing to the database");
